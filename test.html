@@ -6,30 +6,53 @@
 		<meta charset="utf-8">
 
 		<style type="text/css">
-			.cell {
-				border: 1px solid black;
-				height: 20px;
-				width: 20px;
-				display: inline-block;
-			}
-
 			.row {
-				width: 100px;
+				width: 180px;
 				border: 1px dotted grey;
 			}
 
-			.red {
-				background-color: red;
+			.cell {
+				border: 1px solid black;
 			}
 
-			.blue {
-				background-color: blue;
+			.color, .cell {
+				height: 20px;
+				width: 20px;
+				display: inline-block;
+				font-size: 5px;
+			}
+
+			#chosen {
+				border: 2px solid red;
 			}
 
 			#code {
 				font-family: Consolas, monospace;
 				font-size: 10px;
 			}
+			
+
+			.red { background-color: red}
+
+			.blue { background-color: blue}
+
+			.x00 { background-color: #000000}
+			.x01 { background-color: #000055}
+			.x02 { background-color: #0000AA}
+			.x03 { background-color: #0000FF}
+			.x04 { background-color: #002400}
+			.x05 { background-color: #002455}
+			.x06 { background-color: #0024AA}
+			.x07 { background-color: #0024FF}
+			.x08 { background-color: #004800}
+			.x09 { background-color: #004855}
+			.x0A { background-color: #0048AA}
+			.x0B { background-color: #0048FF}
+			.x0C { background-color: #006C00}
+			.x0D { background-color: #006C55}
+			.x0E { background-color: #006CAA}
+			.x0F { background-color: #006CFF}
+			
 
 		</style>
 
@@ -40,37 +63,56 @@
 			$( document ).ready(function() {
  
 			    // Your code here.
-			    console.log( "welcome" );
+			    //console.log( "welcome" );
 
 			    $( ".cell" ).click(function( event ) {
 			    	var classes = $(this).attr("class");
-			    	console.log(typeof(classes));
-			    	if (classes.includes("red")) {
-			    		$( this ).addClass( "blue" );
-			    		$( this ).removeClass( "red" );
+			    	//console.log(typeof(classes));
+			    	
+
+			    	/*if (classes.includes("red")) {
+			    		$( this ).addClass( "blue" ).removeClass( "red" );
 			    	} else if (classes.includes("blue")) {
-			    		$( this ).addClass( "red" );
-			    		$( this ).removeClass( "blue" );
-			    	}
+			    		$( this ).addClass( "red" ).removeClass( "blue" );
+			    	}*/
+			    });
+
+			    $(".color").click(function(event) {
+			    	$("#chosen").removeAttr('id');
+			    	this.id = 'chosen';
+
 			    });
 			 
 			});
 
 			var setCode = function(html) {
 				var cells = document.getElementsByClassName('cell');
-				console.log(cells[0]);
+				//console.log(cells[0]);
 				var code = _.reduce(cells, function(memo, cell) {
 					return memo + cell.className.split(" ").pop() + ", "
 				}
 				, "");
-				console.log(code);
+				//console.log(code);
 				document.getElementById("code").innerHTML = code;
 			};
 
 		</script>
 	</head>
 	<body>
+
+	<div class="row" id="palette">
+	<div class="color x00">#00</div>
+	<div class="color x01">#01</div>
+	<div class="color x02">#02</div>
+	<div class="color x03">#03</div>
+	<div class="color x04">#04</div>
+	<div class="color x05">#05</div>
+	<div class="color x06">#06</div>
+
+
+	</div>
 	<div class="row" id="canvas">
+
 		<div class="cell red" id="d1">
 			1
 		</div>
