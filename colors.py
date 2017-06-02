@@ -84,5 +84,11 @@ def colorGenerator():
     colors.append( (dec2Hex(255), "#FFFFFF") )
     return colors
 
+def divGenerator():
+    # Add zeros manually to 0-F. And the last element!
+    for i in range(0, 255):
+        print("<div class=\"color x" + str(dec2Hex(i)) + "\"> #" + str(dec2Hex(i)) + " </div>" )
 
-colorGenerator()
+
+#colorGenerator()
+divGenerator()
