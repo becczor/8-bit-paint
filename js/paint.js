@@ -1,7 +1,6 @@
-$( document ).ready(function() {
- 
-    // Your code here.
-    alert( "welcome" );
+$( "portfolio" ).ready(function() {
+
+    console.log( "portfolio ready" );
 
     $( "a" ).click(function( event ) {
 

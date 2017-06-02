@@ -15,24 +15,43 @@
 
 			.row {
 				width: 100px;
+				border: 1px dotted grey;
+			}
+
+			.red {
+				background-color: red;
+			}
+
+			.blue {
+				background-color: blue;
+			}
+
+			#code {
+				font-family: Consolas, monospace;
+				font-size: 10px;
 			}
 
 		</style>
 
-		<script src="js/jquery-3.2.1.js"></script>
+		<script src="vendor/jquery/jquery.min.js"></script>
+		<script src="vendor/underscore/underscore.min.js"></script>
 
 		<script>
 			$( document ).ready(function() {
  
 			    // Your code here.
-			    alert( "welcome" );
+			    console.log( "welcome" );
 
-			    $( "a" ).click(function( event ) {
- 
-			        alert( "As you can see, the link no longer took you to jquery.com" );
- 
-        			event.preventDefault();
-			 
+			    $( ".cell" ).click(function( event ) {
+			    	var classes = $(this).attr("class");
+			    	console.log(typeof(classes));
+			    	if (classes.includes("red")) {
+			    		$( this ).addClass( "blue" );
+			    		$( this ).removeClass( "red" );
+			    	} else if (classes.includes("blue")) {
+			    		$( this ).addClass( "red" );
+			    		$( this ).removeClass( "blue" );
+			    	}
 			    });
 			 
 			});
@@ -40,29 +59,43 @@
 		</script>
 	</head>
 	<body>
-	<div class="row">
-		<div class="cell">
+	<div class="row" id="outer">
+		<div class="cell red" id="first">
 			1
 		</div>
-		<div class="cell">
+		<div class="cell blue" id="second">
 			2
 		</div>
-		<div class="cell">
-			1
+		<div class="cell red" id="third">
+			3
 		</div>
-		<div class="cell">
-			2
+		<div class="cell blue" id="fourth">
+			4
 		</div>
-		<div class="cell">
-			1
+		<div class="cell red" id="fifth">
+			5
 		</div>
-		<div class="cell">
-			2
+		<div class="cell blue" id="sixth">
+			6
+		</div>
+		<div class="cell red" id="seventh">
+			7
+		</div>
+		<div class="cell blue" id="eighth">
+			8
 		</div>
 
 
 	</div>
 	<a href="http://jquery.com/">jQuery</a>
+	<br/>
+
+	<button>Gif me le code</button>
+	<br />
+
+	<div class="row" id="code">
+		
+	</div>
 
 
 	</body>
