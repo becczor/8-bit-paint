@@ -1,3 +1,18 @@
+$( document ).ready(function() {
+ 
+    // Your code here.
+    alert( "welcome" );
+
+    $( "a" ).click(function( event ) {
+
+        alert( "As you can see, the link no longer took you to jquery.com" );
+
+        event.preventDefault();
+
+    });
+
+});
+
 /*function genDivs(v){ 
 
     var e = ""; // whatever you want to append the rows to: 
@@ -16,7 +31,7 @@
     document.getElementById("code").innerText = e.innerHTML;
 
 }
-*/
+
 
 function genDivs(v){ 
 
@@ -35,4 +50,4 @@ function genDivs(v){
 
 }
 
-
+*/
