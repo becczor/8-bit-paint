@@ -56,41 +56,51 @@
 			 
 			});
 
+			var setCode = function(html) {
+				var cells = document.getElementsByClassName('cell');
+				console.log(cells[0]);
+				var code = _.reduce(cells, function(memo, cell) {
+					return memo + cell.className.split(" ").pop() + ", "
+				}
+				, "");
+				console.log(code);
+				document.getElementById("code").innerHTML = code;
+			};
+
 		</script>
 	</head>
 	<body>
-	<div class="row" id="outer">
-		<div class="cell red" id="first">
+	<div class="row" id="canvas">
+		<div class="cell red" id="d1">
 			1
 		</div>
-		<div class="cell blue" id="second">
+		<div class="cell blue" id="d2">
 			2
 		</div>
-		<div class="cell red" id="third">
+		<div class="cell red" id="d3">
 			3
 		</div>
-		<div class="cell blue" id="fourth">
+		<div class="cell blue" id="d4">
 			4
 		</div>
-		<div class="cell red" id="fifth">
+		<div class="cell red" id="d5">
 			5
 		</div>
-		<div class="cell blue" id="sixth">
+		<div class="cell blue" id="d6">
 			6
 		</div>
-		<div class="cell red" id="seventh">
+		<div class="cell red" id="d7">
 			7
 		</div>
-		<div class="cell blue" id="eighth">
+		<div class="cell blue" id="d8">
 			8
 		</div>
 
 
 	</div>
-	<a href="http://jquery.com/">jQuery</a>
 	<br/>
 
-	<button>Gif me le code</button>
+	<button class="btn btn-primary" id="giveCode" onclick="setCode(this)">Gif me le code</button>
 	<br />
 
 	<div class="row" id="code">
