@@ -20,15 +20,28 @@
 			}
 
 			.color, .cell {
-				height: 40px;
-				width: 40px;
+				height: 30px;
+				width: 30px;
 				display: inline-block;
-				font-size: 20px;
+
 				border: 1px solid #FFFFFF;
+
+				font-size: 12px;
+				text-align: center;
+				line-height: 30px; /* Vertical centering of text*/
+			}
+
+			.color {
+				font-family: Helvetica, Arial, sans-serif;
 			}
 
 			.cell {
 				border: 1px solid #000000;
+				font-family: Consolas, monospace;
+			}
+
+			.row {
+
 			}
 
 			#chosen {
@@ -40,262 +53,263 @@
 				font-size: 12px;
 			}
 
-			.x00 { background-color: #000000}
-			.x01 { background-color: #000055}
-			.x02 { background-color: #0000AA}
-			.x03 { background-color: #0000FF}
-			.x04 { background-color: #002400}
-			.x05 { background-color: #002455}
-			.x06 { background-color: #0024AA}
-			.x07 { background-color: #0024FF}
-			.x08 { background-color: #004800}
-			.x09 { background-color: #004855}
-			.x0A { background-color: #0048AA}
-			.x0B { background-color: #0048FF}
-			.x0C { background-color: #006C00}
-			.x0D { background-color: #006C55}
-			.x0E { background-color: #006CAA}
-			.x0F { background-color: #006CFF}
-			.x10 { background-color: #009000}
-			.x11 { background-color: #009055}
-			.x12 { background-color: #0090AA}
-			.x13 { background-color: #0090FF}
-			.x14 { background-color: #00B400}
-			.x15 { background-color: #00B455}
-			.x16 { background-color: #00B4AA}
-			.x17 { background-color: #00B4FF}
-			.x18 { background-color: #00D800}
-			.x19 { background-color: #00D855}
-			.x1A { background-color: #00D8AA}
-			.x1B { background-color: #00D8FF}
-			.x1C { background-color: #00FC00}
-			.x1D { background-color: #00FC55}
-			.x1E { background-color: #00FCAA}
-			.x1F { background-color: #00FCFF}
-			.x20 { background-color: #240000}
-			.x21 { background-color: #240055}
-			.x22 { background-color: #2400AA}
-			.x23 { background-color: #2400FF}
-			.x24 { background-color: #242400}
-			.x25 { background-color: #242455}
-			.x26 { background-color: #2424AA}
-			.x27 { background-color: #2424FF}
-			.x28 { background-color: #244800}
-			.x29 { background-color: #244855}
-			.x2A { background-color: #2448AA}
-			.x2B { background-color: #2448FF}
-			.x2C { background-color: #246C00}
-			.x2D { background-color: #246C55}
-			.x2E { background-color: #246CAA}
-			.x2F { background-color: #246CFF}
-			.x30 { background-color: #249000}
-			.x31 { background-color: #249055}
-			.x32 { background-color: #2490AA}
-			.x33 { background-color: #2490FF}
-			.x34 { background-color: #24B400}
-			.x35 { background-color: #24B455}
-			.x36 { background-color: #24B4AA}
-			.x37 { background-color: #24B4FF}
-			.x38 { background-color: #24D800}
-			.x39 { background-color: #24D855}
-			.x3A { background-color: #24D8AA}
-			.x3B { background-color: #24D8FF}
-			.x3C { background-color: #24FC00}
-			.x3D { background-color: #24FC55}
-			.x3E { background-color: #24FCAA}
-			.x3F { background-color: #24FCFF}
-			.x40 { background-color: #480000}
-			.x41 { background-color: #480055}
-			.x42 { background-color: #4800AA}
-			.x43 { background-color: #4800FF}
-			.x44 { background-color: #482400}
-			.x45 { background-color: #482455}
-			.x46 { background-color: #4824AA}
-			.x47 { background-color: #4824FF}
-			.x48 { background-color: #484800}
-			.x49 { background-color: #484855}
-			.x4A { background-color: #4848AA}
-			.x4B { background-color: #4848FF}
-			.x4C { background-color: #486C00}
-			.x4D { background-color: #486C55}
-			.x4E { background-color: #486CAA}
-			.x4F { background-color: #486CFF}
-			.x50 { background-color: #489000}
-			.x51 { background-color: #489055}
-			.x52 { background-color: #4890AA}
-			.x53 { background-color: #4890FF}
-			.x54 { background-color: #48B400}
-			.x55 { background-color: #48B455}
-			.x56 { background-color: #48B4AA}
-			.x57 { background-color: #48B4FF}
-			.x58 { background-color: #48D800}
-			.x59 { background-color: #48D855}
-			.x5A { background-color: #48D8AA}
-			.x5B { background-color: #48D8FF}
-			.x5C { background-color: #48FC00}
-			.x5D { background-color: #48FC55}
-			.x5E { background-color: #48FCAA}
-			.x5F { background-color: #48FCFF}
-			.x60 { background-color: #6C0000}
-			.x61 { background-color: #6C0055}
-			.x62 { background-color: #6C00AA}
-			.x63 { background-color: #6C00FF}
-			.x64 { background-color: #6C2400}
-			.x65 { background-color: #6C2455}
-			.x66 { background-color: #6C24AA}
-			.x67 { background-color: #6C24FF}
-			.x68 { background-color: #6C4800}
-			.x69 { background-color: #6C4855}
-			.x6A { background-color: #6C48AA}
-			.x6B { background-color: #6C48FF}
-			.x6C { background-color: #6C6C00}
-			.x6D { background-color: #6C6C55}
-			.x6E { background-color: #6C6CAA}
-			.x6F { background-color: #6C6CFF}
-			.x70 { background-color: #6C9000}
-			.x71 { background-color: #6C9055}
-			.x72 { background-color: #6C90AA}
-			.x73 { background-color: #6C90FF}
-			.x74 { background-color: #6CB400}
-			.x75 { background-color: #6CB455}
-			.x76 { background-color: #6CB4AA}
-			.x77 { background-color: #6CB4FF}
-			.x78 { background-color: #6CD800}
-			.x79 { background-color: #6CD855}
-			.x7A { background-color: #6CD8AA}
-			.x7B { background-color: #6CD8FF}
-			.x7C { background-color: #6CFC00}
-			.x7D { background-color: #6CFC55}
-			.x7E { background-color: #6CFCAA}
-			.x7F { background-color: #6CFCFF}
-			.x80 { background-color: #900000}
-			.x81 { background-color: #900055}
-			.x82 { background-color: #9000AA}
-			.x83 { background-color: #9000FF}
-			.x84 { background-color: #902400}
-			.x85 { background-color: #902455}
-			.x86 { background-color: #9024AA}
-			.x87 { background-color: #9024FF}
-			.x88 { background-color: #904800}
-			.x89 { background-color: #904855}
-			.x8A { background-color: #9048AA}
-			.x8B { background-color: #9048FF}
-			.x8C { background-color: #906C00}
-			.x8D { background-color: #906C55}
-			.x8E { background-color: #906CAA}
-			.x8F { background-color: #906CFF}
-			.x90 { background-color: #909000}
-			.x91 { background-color: #909055}
-			.x92 { background-color: #9090AA}
-			.x93 { background-color: #9090FF}
-			.x94 { background-color: #90B400}
-			.x95 { background-color: #90B455}
-			.x96 { background-color: #90B4AA}
-			.x97 { background-color: #90B4FF}
-			.x98 { background-color: #90D800}
-			.x99 { background-color: #90D855}
-			.x9A { background-color: #90D8AA}
-			.x9B { background-color: #90D8FF}
-			.x9C { background-color: #90FC00}
-			.x9D { background-color: #90FC55}
-			.x9E { background-color: #90FCAA}
-			.x9F { background-color: #90FCFF}
-			.xA0 { background-color: #B40000}
-			.xA1 { background-color: #B40055}
-			.xA2 { background-color: #B400AA}
-			.xA3 { background-color: #B400FF}
-			.xA4 { background-color: #B42400}
-			.xA5 { background-color: #B42455}
-			.xA6 { background-color: #B424AA}
-			.xA7 { background-color: #B424FF}
-			.xA8 { background-color: #B44800}
-			.xA9 { background-color: #B44855}
-			.xAA { background-color: #B448AA}
-			.xAB { background-color: #B448FF}
-			.xAC { background-color: #B46C00}
-			.xAD { background-color: #B46C55}
-			.xAE { background-color: #B46CAA}
-			.xAF { background-color: #B46CFF}
-			.xB0 { background-color: #B49000}
-			.xB1 { background-color: #B49055}
-			.xB2 { background-color: #B490AA}
-			.xB3 { background-color: #B490FF}
-			.xB4 { background-color: #B4B400}
-			.xB5 { background-color: #B4B455}
-			.xB6 { background-color: #B4B4AA}
-			.xB7 { background-color: #B4B4FF}
-			.xB8 { background-color: #B4D800}
-			.xB9 { background-color: #B4D855}
-			.xBA { background-color: #B4D8AA}
-			.xBB { background-color: #B4D8FF}
-			.xBC { background-color: #B4FC00}
-			.xBD { background-color: #B4FC55}
-			.xBE { background-color: #B4FCAA}
-			.xBF { background-color: #B4FCFF}
-			.xC0 { background-color: #D80000}
-			.xC1 { background-color: #D80055}
-			.xC2 { background-color: #D800AA}
-			.xC3 { background-color: #D800FF}
-			.xC4 { background-color: #D82400}
-			.xC5 { background-color: #D82455}
-			.xC6 { background-color: #D824AA}
-			.xC7 { background-color: #D824FF}
-			.xC8 { background-color: #D84800}
-			.xC9 { background-color: #D84855}
-			.xCA { background-color: #D848AA}
-			.xCB { background-color: #D848FF}
-			.xCC { background-color: #D86C00}
-			.xCD { background-color: #D86C55}
-			.xCE { background-color: #D86CAA}
-			.xCF { background-color: #D86CFF}
-			.xD0 { background-color: #D89000}
-			.xD1 { background-color: #D89055}
-			.xD2 { background-color: #D890AA}
-			.xD3 { background-color: #D890FF}
-			.xD4 { background-color: #D8B400}
-			.xD5 { background-color: #D8B455}
-			.xD6 { background-color: #D8B4AA}
-			.xD7 { background-color: #D8B4FF}
-			.xD8 { background-color: #D8D800}
-			.xD9 { background-color: #D8D855}
-			.xDA { background-color: #D8D8AA}
-			.xDB { background-color: #D8D8FF}
-			.xDC { background-color: #D8FC00}
-			.xDD { background-color: #D8FC55}
-			.xDE { background-color: #D8FCAA}
-			.xDF { background-color: #D8FCFF}
-			.xE0 { background-color: #FC0000}
-			.xE1 { background-color: #FC0055}
-			.xE2 { background-color: #FC00AA}
-			.xE3 { background-color: #FC00FF}
-			.xE4 { background-color: #FC2400}
-			.xE5 { background-color: #FC2455}
-			.xE6 { background-color: #FC24AA}
-			.xE7 { background-color: #FC24FF}
-			.xE8 { background-color: #FC4800}
-			.xE9 { background-color: #FC4855}
-			.xEA { background-color: #FC48AA}
-			.xEB { background-color: #FC48FF}
-			.xEC { background-color: #FC6C00}
-			.xED { background-color: #FC6C55}
-			.xEE { background-color: #FC6CAA}
-			.xEF { background-color: #FC6CFF}
-			.xF0 { background-color: #FC9000}
-			.xF1 { background-color: #FC9055}
-			.xF2 { background-color: #FC90AA}
-			.xF3 { background-color: #FC90FF}
-			.xF4 { background-color: #FCB400}
-			.xF5 { background-color: #FCB455}
-			.xF6 { background-color: #FCB4AA}
-			.xF7 { background-color: #FCB4FF}
-			.xF8 { background-color: #FCD800}
-			.xF9 { background-color: #FCD855}
-			.xFA { background-color: #FCD8AA}
-			.xFB { background-color: #FCD8FF}
-			.xFC { background-color: #FCFC00}
-			.xFD { background-color: #FCFC55}
-			.xFE { background-color: #FCFCAA}
-			.xFF { background-color: #FFFFFF}
+			.x_00 { background-color: #000000}
+			.x_01 { background-color: #000055}
+			.x_02 { background-color: #0000AA}
+			.x_03 { background-color: #0000FF}
+			.x_04 { background-color: #002400}
+			.x_05 { background-color: #002455}
+			.x_06 { background-color: #0024AA}
+			.x_07 { background-color: #0024FF}
+			.x_08 { background-color: #004800}
+			.x_09 { background-color: #004855}
+			.x_0A { background-color: #0048AA}
+			.x_0B { background-color: #0048FF}
+			.x_0C { background-color: #006C00}
+			.x_0D { background-color: #006C55}
+			.x_0E { background-color: #006CAA}
+			.x_0F { background-color: #006CFF}
+			.x_10 { background-color: #009000}
+			.x_11 { background-color: #009055}
+			.x_12 { background-color: #0090AA}
+			.x_13 { background-color: #0090FF}
+			.x_14 { background-color: #00B400}
+			.x_15 { background-color: #00B455}
+			.x_16 { background-color: #00B4AA}
+			.x_17 { background-color: #00B4FF}
+			.x_18 { background-color: #00D800}
+			.x_19 { background-color: #00D855}
+			.x_1A { background-color: #00D8AA}
+			.x_1B { background-color: #00D8FF}
+			.x_1C { background-color: #00FC00}
+			.x_1D { background-color: #00FC55}
+			.x_1E { background-color: #00FCAA}
+			.x_1F { background-color: #00FCFF}
+			.x_20 { background-color: #240000}
+			.x_21 { background-color: #240055}
+			.x_22 { background-color: #2400AA}
+			.x_23 { background-color: #2400FF}
+			.x_24 { background-color: #242400}
+			.x_25 { background-color: #242455}
+			.x_26 { background-color: #2424AA}
+			.x_27 { background-color: #2424FF}
+			.x_28 { background-color: #244800}
+			.x_29 { background-color: #244855}
+			.x_2A { background-color: #2448AA}
+			.x_2B { background-color: #2448FF}
+			.x_2C { background-color: #246C00}
+			.x_2D { background-color: #246C55}
+			.x_2E { background-color: #246CAA}
+			.x_2F { background-color: #246CFF}
+			.x_30 { background-color: #249000}
+			.x_31 { background-color: #249055}
+			.x_32 { background-color: #2490AA}
+			.x_33 { background-color: #2490FF}
+			.x_34 { background-color: #24B400}
+			.x_35 { background-color: #24B455}
+			.x_36 { background-color: #24B4AA}
+			.x_37 { background-color: #24B4FF}
+			.x_38 { background-color: #24D800}
+			.x_39 { background-color: #24D855}
+			.x_3A { background-color: #24D8AA}
+			.x_3B { background-color: #24D8FF}
+			.x_3C { background-color: #24FC00}
+			.x_3D { background-color: #24FC55}
+			.x_3E { background-color: #24FCAA}
+			.x_3F { background-color: #24FCFF}
+			.x_40 { background-color: #480000}
+			.x_41 { background-color: #480055}
+			.x_42 { background-color: #4800AA}
+			.x_43 { background-color: #4800FF}
+			.x_44 { background-color: #482400}
+			.x_45 { background-color: #482455}
+			.x_46 { background-color: #4824AA}
+			.x_47 { background-color: #4824FF}
+			.x_48 { background-color: #484800}
+			.x_49 { background-color: #484855}
+			.x_4A { background-color: #4848AA}
+			.x_4B { background-color: #4848FF}
+			.x_4C { background-color: #486C00}
+			.x_4D { background-color: #486C55}
+			.x_4E { background-color: #486CAA}
+			.x_4F { background-color: #486CFF}
+			.x_50 { background-color: #489000}
+			.x_51 { background-color: #489055}
+			.x_52 { background-color: #4890AA}
+			.x_53 { background-color: #4890FF}
+			.x_54 { background-color: #48B400}
+			.x_55 { background-color: #48B455}
+			.x_56 { background-color: #48B4AA}
+			.x_57 { background-color: #48B4FF}
+			.x_58 { background-color: #48D800}
+			.x_59 { background-color: #48D855}
+			.x_5A { background-color: #48D8AA}
+			.x_5B { background-color: #48D8FF}
+			.x_5C { background-color: #48FC00}
+			.x_5D { background-color: #48FC55}
+			.x_5E { background-color: #48FCAA}
+			.x_5F { background-color: #48FCFF}
+			.x_60 { background-color: #6C0000}
+			.x_61 { background-color: #6C0055}
+			.x_62 { background-color: #6C00AA}
+			.x_63 { background-color: #6C00FF}
+			.x_64 { background-color: #6C2400}
+			.x_65 { background-color: #6C2455}
+			.x_66 { background-color: #6C24AA}
+			.x_67 { background-color: #6C24FF}
+			.x_68 { background-color: #6C4800}
+			.x_69 { background-color: #6C4855}
+			.x_6A { background-color: #6C48AA}
+			.x_6B { background-color: #6C48FF}
+			.x_6C { background-color: #6C6C00}
+			.x_6D { background-color: #6C6C55}
+			.x_6E { background-color: #6C6CAA}
+			.x_6F { background-color: #6C6CFF}
+			.x_70 { background-color: #6C9000}
+			.x_71 { background-color: #6C9055}
+			.x_72 { background-color: #6C90AA}
+			.x_73 { background-color: #6C90FF}
+			.x_74 { background-color: #6CB400}
+			.x_75 { background-color: #6CB455}
+			.x_76 { background-color: #6CB4AA}
+			.x_77 { background-color: #6CB4FF}
+			.x_78 { background-color: #6CD800}
+			.x_79 { background-color: #6CD855}
+			.x_7A { background-color: #6CD8AA}
+			.x_7B { background-color: #6CD8FF}
+			.x_7C { background-color: #6CFC00}
+			.x_7D { background-color: #6CFC55}
+			.x_7E { background-color: #6CFCAA}
+			.x_7F { background-color: #6CFCFF}
+			.x_80 { background-color: #900000}
+			.x_81 { background-color: #900055}
+			.x_82 { background-color: #9000AA}
+			.x_83 { background-color: #9000FF}
+			.x_84 { background-color: #902400}
+			.x_85 { background-color: #902455}
+			.x_86 { background-color: #9024AA}
+			.x_87 { background-color: #9024FF}
+			.x_88 { background-color: #904800}
+			.x_89 { background-color: #904855}
+			.x_8A { background-color: #9048AA}
+			.x_8B { background-color: #9048FF}
+			.x_8C { background-color: #906C00}
+			.x_8D { background-color: #906C55}
+			.x_8E { background-color: #906CAA}
+			.x_8F { background-color: #906CFF}
+			.x_90 { background-color: #909000}
+			.x_91 { background-color: #909055}
+			.x_92 { background-color: #9090AA}
+			.x_93 { background-color: #9090FF}
+			.x_94 { background-color: #90B400}
+			.x_95 { background-color: #90B455}
+			.x_96 { background-color: #90B4AA}
+			.x_97 { background-color: #90B4FF}
+			.x_98 { background-color: #90D800}
+			.x_99 { background-color: #90D855}
+			.x_9A { background-color: #90D8AA}
+			.x_9B { background-color: #90D8FF}
+			.x_9C { background-color: #90FC00}
+			.x_9D { background-color: #90FC55}
+			.x_9E { background-color: #90FCAA}
+			.x_9F { background-color: #90FCFF}
+			.x_A0 { background-color: #B40000}
+			.x_A1 { background-color: #B40055}
+			.x_A2 { background-color: #B400AA}
+			.x_A3 { background-color: #B400FF}
+			.x_A4 { background-color: #B42400}
+			.x_A5 { background-color: #B42455}
+			.x_A6 { background-color: #B424AA}
+			.x_A7 { background-color: #B424FF}
+			.x_A8 { background-color: #B44800}
+			.x_A9 { background-color: #B44855}
+			.x_AA { background-color: #B448AA}
+			.x_AB { background-color: #B448FF}
+			.x_AC { background-color: #B46C00}
+			.x_AD { background-color: #B46C55}
+			.x_AE { background-color: #B46CAA}
+			.x_AF { background-color: #B46CFF}
+			.x_B0 { background-color: #B49000}
+			.x_B1 { background-color: #B49055}
+			.x_B2 { background-color: #B490AA}
+			.x_B3 { background-color: #B490FF}
+			.x_B4 { background-color: #B4B400}
+			.x_B5 { background-color: #B4B455}
+			.x_B6 { background-color: #B4B4AA}
+			.x_B7 { background-color: #B4B4FF}
+			.x_B8 { background-color: #B4D800}
+			.x_B9 { background-color: #B4D855}
+			.x_BA { background-color: #B4D8AA}
+			.x_BB { background-color: #B4D8FF}
+			.x_BC { background-color: #B4FC00}
+			.x_BD { background-color: #B4FC55}
+			.x_BE { background-color: #B4FCAA}
+			.x_BF { background-color: #B4FCFF}
+			.x_C0 { background-color: #D80000}
+			.x_C1 { background-color: #D80055}
+			.x_C2 { background-color: #D800AA}
+			.x_C3 { background-color: #D800FF}
+			.x_C4 { background-color: #D82400}
+			.x_C5 { background-color: #D82455}
+			.x_C6 { background-color: #D824AA}
+			.x_C7 { background-color: #D824FF}
+			.x_C8 { background-color: #D84800}
+			.x_C9 { background-color: #D84855}
+			.x_CA { background-color: #D848AA}
+			.x_CB { background-color: #D848FF}
+			.x_CC { background-color: #D86C00}
+			.x_CD { background-color: #D86C55}
+			.x_CE { background-color: #D86CAA}
+			.x_CF { background-color: #D86CFF}
+			.x_D0 { background-color: #D89000}
+			.x_D1 { background-color: #D89055}
+			.x_D2 { background-color: #D890AA}
+			.x_D3 { background-color: #D890FF}
+			.x_D4 { background-color: #D8B400}
+			.x_D5 { background-color: #D8B455}
+			.x_D6 { background-color: #D8B4AA}
+			.x_D7 { background-color: #D8B4FF}
+			.x_D8 { background-color: #D8D800}
+			.x_D9 { background-color: #D8D855}
+			.x_DA { background-color: #D8D8AA}
+			.x_DB { background-color: #D8D8FF}
+			.x_DC { background-color: #D8FC00}
+			.x_DD { background-color: #D8FC55}
+			.x_DE { background-color: #D8FCAA}
+			.x_DF { background-color: #D8FCFF}
+			.x_E0 { background-color: #FC0000}
+			.x_E1 { background-color: #FC0055}
+			.x_E2 { background-color: #FC00AA}
+			.x_E3 { background-color: #FC00FF}
+			.x_E4 { background-color: #FC2400}
+			.x_E5 { background-color: #FC2455}
+			.x_E6 { background-color: #FC24AA}
+			.x_E7 { background-color: #FC24FF}
+			.x_E8 { background-color: #FC4800}
+			.x_E9 { background-color: #FC4855}
+			.x_EA { background-color: #FC48AA}
+			.x_EB { background-color: #FC48FF}
+			.x_EC { background-color: #FC6C00}
+			.x_ED { background-color: #FC6C55}
+			.x_EE { background-color: #FC6CAA}
+			.x_EF { background-color: #FC6CFF}
+			.x_F0 { background-color: #FC9000}
+			.x_F1 { background-color: #FC9055}
+			.x_F2 { background-color: #FC90AA}
+			.x_F3 { background-color: #FC90FF}
+			.x_F4 { background-color: #FCB400}
+			.x_F5 { background-color: #FCB455}
+			.x_F6 { background-color: #FCB4AA}
+			.x_F7 { background-color: #FCB4FF}
+			.x_F8 { background-color: #FCD800}
+			.x_F9 { background-color: #FCD855}
+			.x_FA { background-color: #FCD8AA}
+			.x_FB { background-color: #FCD8FF}
+			.x_FC { background-color: #FCFC00}
+			.x_FD { background-color: #FCFC55}
+			.x_FE { background-color: #FCFCAA}
+			.x_FF { background-color: #FFFFFF}
+
 
 			
 
@@ -313,31 +327,36 @@
 				$(".color").click(function(event) {
 			    	$("#chosen").removeAttr('id');
 			    	this.id = 'chosen';
-
 			    });
 
 				// Update color class in div that should be filled
 			//  $(staticAncestors).on(eventName, dynamicChild, function() {});
 				$("#canvas").on("click", ".cell", function() {
-					alert("Hello");
-			    //$( ".cell" ).click(function( event ) {
 			    	colorClass = $(this).attr("class").split(" ").pop();
 			    	chosenClass = $("#chosen").attr("class").split(" ").pop();
 			    	$(this).removeClass(colorClass).addClass(chosenClass);
+
+			    	var preDelimiter = $("#pre-delimiter").val();
+					var subDelimiter = $("#sub-delimiter").val();
+					if (subDelimiter === "") {
+						subDelimiter = ", ";
+					}
+			    	$(this).text( preDelimiter + chosenClass.split("_").pop() + subDelimiter);
 			    });
 
 			});
 
 			// Generates code from colorClasses, with delimiters from user
 			var setCode = function(html) {
-				var delimiter = $("#delimiter").val();
-				if (delimiter === "") {
-					delimiter = ", ";
+				var preDelimiter = $("#pre-delimiter").val();
+				var subDelimiter = $("#sub-delimiter").val();
+				if (subDelimiter === "") {
+					subDelimiter = ", ";
 				}
 				var cells = document.getElementsByClassName('cell');
 				//console.log(cells[0]);
 				var code = _.reduce(cells, function(memo, cell) {
-					return memo + cell.className.split(" ").pop() + delimiter
+					return memo + preDelimiter + cell.className.split(" ").pop().split("_").pop() + subDelimiter
 				}
 				, "");
 				//console.log(code);
@@ -348,7 +367,9 @@
 				event.preventDefault();
 				var rows = $("#inputRows").val();
 				var cols = $("#inputCols").val();
-				console.log(rows + " x " + cols)
+				var preDelimiter = $("#pre-delimiter").val();
+				var subDelimiter = $("#sub-delimiter").val();
+				//console.log(rows + " x " + cols)
 
 				if (rows === "") {
 					rows = 8;
@@ -356,14 +377,19 @@
 				if (cols === "") {
 					cols = 8;
 				}
+				if (subDelimiter === "") {
+					subDelimiter = ", ";
+				}
 
 				var htmlString = "";
 				for (i = 0; i < rows; i++) {
+					htmlString += "<div class=\"row\">";
 					for (j = 0; j < cols; j++) {
-						htmlString += "<div class=\"cell xFF\" id=\"d" + i + j + "\">" + i + j + "</div>";
+						htmlString += "<div class=\"cell x_FF\" id=\"d" + i + j + "\">" + preDelimiter + "FF" + subDelimiter + "</div>";
 					}
+					htmlString += "</div>";
 				}
-				console.log(htmlString);
+				//console.log(htmlString);
 
 				document.getElementById("canvas").innerHTML = htmlString;
 			}
@@ -373,263 +399,262 @@
 	<body>
 
 	<div class="box" id="palette">
-		<div class="color x00" id="chosen">#00</div>
-		<div class="color x00"> #00 </div>
-		<div class="color x01"> #01 </div>
-		<div class="color x02"> #02 </div>
-		<div class="color x03"> #03 </div>
-		<div class="color x04"> #04 </div>
-		<div class="color x05"> #05 </div>
-		<div class="color x06"> #06 </div>
-		<div class="color x07"> #07 </div>
-		<div class="color x08"> #08 </div>
-		<div class="color x09"> #09 </div>
-		<div class="color x0A"> #0A </div>
-		<div class="color x0B"> #0B </div>
-		<div class="color x0C"> #0C </div>
-		<div class="color x0D"> #0D </div>
-		<div class="color x0E"> #0E </div>
-		<div class="color x0F"> #0F </div>
-		<div class="color x10"> #10 </div>
-		<div class="color x11"> #11 </div>
-		<div class="color x12"> #12 </div>
-		<div class="color x13"> #13 </div>
-		<div class="color x14"> #14 </div>
-		<div class="color x15"> #15 </div>
-		<div class="color x16"> #16 </div>
-		<div class="color x17"> #17 </div>
-		<div class="color x18"> #18 </div>
-		<div class="color x19"> #19 </div>
-		<div class="color x1A"> #1A </div>
-		<div class="color x1B"> #1B </div>
-		<div class="color x1C"> #1C </div>
-		<div class="color x1D"> #1D </div>
-		<div class="color x1E"> #1E </div>
-		<div class="color x1F"> #1F </div>
-		<div class="color x20"> #20 </div>
-		<div class="color x21"> #21 </div>
-		<div class="color x22"> #22 </div>
-		<div class="color x23"> #23 </div>
-		<div class="color x24"> #24 </div>
-		<div class="color x25"> #25 </div>
-		<div class="color x26"> #26 </div>
-		<div class="color x27"> #27 </div>
-		<div class="color x28"> #28 </div>
-		<div class="color x29"> #29 </div>
-		<div class="color x2A"> #2A </div>
-		<div class="color x2B"> #2B </div>
-		<div class="color x2C"> #2C </div>
-		<div class="color x2D"> #2D </div>
-		<div class="color x2E"> #2E </div>
-		<div class="color x2F"> #2F </div>
-		<div class="color x30"> #30 </div>
-		<div class="color x31"> #31 </div>
-		<div class="color x32"> #32 </div>
-		<div class="color x33"> #33 </div>
-		<div class="color x34"> #34 </div>
-		<div class="color x35"> #35 </div>
-		<div class="color x36"> #36 </div>
-		<div class="color x37"> #37 </div>
-		<div class="color x38"> #38 </div>
-		<div class="color x39"> #39 </div>
-		<div class="color x3A"> #3A </div>
-		<div class="color x3B"> #3B </div>
-		<div class="color x3C"> #3C </div>
-		<div class="color x3D"> #3D </div>
-		<div class="color x3E"> #3E </div>
-		<div class="color x3F"> #3F </div>
-		<div class="color x40"> #40 </div>
-		<div class="color x41"> #41 </div>
-		<div class="color x42"> #42 </div>
-		<div class="color x43"> #43 </div>
-		<div class="color x44"> #44 </div>
-		<div class="color x45"> #45 </div>
-		<div class="color x46"> #46 </div>
-		<div class="color x47"> #47 </div>
-		<div class="color x48"> #48 </div>
-		<div class="color x49"> #49 </div>
-		<div class="color x4A"> #4A </div>
-		<div class="color x4B"> #4B </div>
-		<div class="color x4C"> #4C </div>
-		<div class="color x4D"> #4D </div>
-		<div class="color x4E"> #4E </div>
-		<div class="color x4F"> #4F </div>
-		<div class="color x50"> #50 </div>
-		<div class="color x51"> #51 </div>
-		<div class="color x52"> #52 </div>
-		<div class="color x53"> #53 </div>
-		<div class="color x54"> #54 </div>
-		<div class="color x55"> #55 </div>
-		<div class="color x56"> #56 </div>
-		<div class="color x57"> #57 </div>
-		<div class="color x58"> #58 </div>
-		<div class="color x59"> #59 </div>
-		<div class="color x5A"> #5A </div>
-		<div class="color x5B"> #5B </div>
-		<div class="color x5C"> #5C </div>
-		<div class="color x5D"> #5D </div>
-		<div class="color x5E"> #5E </div>
-		<div class="color x5F"> #5F </div>
-		<div class="color x60"> #60 </div>
-		<div class="color x61"> #61 </div>
-		<div class="color x62"> #62 </div>
-		<div class="color x63"> #63 </div>
-		<div class="color x64"> #64 </div>
-		<div class="color x65"> #65 </div>
-		<div class="color x66"> #66 </div>
-		<div class="color x67"> #67 </div>
-		<div class="color x68"> #68 </div>
-		<div class="color x69"> #69 </div>
-		<div class="color x6A"> #6A </div>
-		<div class="color x6B"> #6B </div>
-		<div class="color x6C"> #6C </div>
-		<div class="color x6D"> #6D </div>
-		<div class="color x6E"> #6E </div>
-		<div class="color x6F"> #6F </div>
-		<div class="color x70"> #70 </div>
-		<div class="color x71"> #71 </div>
-		<div class="color x72"> #72 </div>
-		<div class="color x73"> #73 </div>
-		<div class="color x74"> #74 </div>
-		<div class="color x75"> #75 </div>
-		<div class="color x76"> #76 </div>
-		<div class="color x77"> #77 </div>
-		<div class="color x78"> #78 </div>
-		<div class="color x79"> #79 </div>
-		<div class="color x7A"> #7A </div>
-		<div class="color x7B"> #7B </div>
-		<div class="color x7C"> #7C </div>
-		<div class="color x7D"> #7D </div>
-		<div class="color x7E"> #7E </div>
-		<div class="color x7F"> #7F </div>
-		<div class="color x80"> #80 </div>
-		<div class="color x81"> #81 </div>
-		<div class="color x82"> #82 </div>
-		<div class="color x83"> #83 </div>
-		<div class="color x84"> #84 </div>
-		<div class="color x85"> #85 </div>
-		<div class="color x86"> #86 </div>
-		<div class="color x87"> #87 </div>
-		<div class="color x88"> #88 </div>
-		<div class="color x89"> #89 </div>
-		<div class="color x8A"> #8A </div>
-		<div class="color x8B"> #8B </div>
-		<div class="color x8C"> #8C </div>
-		<div class="color x8D"> #8D </div>
-		<div class="color x8E"> #8E </div>
-		<div class="color x8F"> #8F </div>
-		<div class="color x90"> #90 </div>
-		<div class="color x91"> #91 </div>
-		<div class="color x92"> #92 </div>
-		<div class="color x93"> #93 </div>
-		<div class="color x94"> #94 </div>
-		<div class="color x95"> #95 </div>
-		<div class="color x96"> #96 </div>
-		<div class="color x97"> #97 </div>
-		<div class="color x98"> #98 </div>
-		<div class="color x99"> #99 </div>
-		<div class="color x9A"> #9A </div>
-		<div class="color x9B"> #9B </div>
-		<div class="color x9C"> #9C </div>
-		<div class="color x9D"> #9D </div>
-		<div class="color x9E"> #9E </div>
-		<div class="color x9F"> #9F </div>
-		<div class="color xA0"> #A0 </div>
-		<div class="color xA1"> #A1 </div>
-		<div class="color xA2"> #A2 </div>
-		<div class="color xA3"> #A3 </div>
-		<div class="color xA4"> #A4 </div>
-		<div class="color xA5"> #A5 </div>
-		<div class="color xA6"> #A6 </div>
-		<div class="color xA7"> #A7 </div>
-		<div class="color xA8"> #A8 </div>
-		<div class="color xA9"> #A9 </div>
-		<div class="color xAA"> #AA </div>
-		<div class="color xAB"> #AB </div>
-		<div class="color xAC"> #AC </div>
-		<div class="color xAD"> #AD </div>
-		<div class="color xAE"> #AE </div>
-		<div class="color xAF"> #AF </div>
-		<div class="color xB0"> #B0 </div>
-		<div class="color xB1"> #B1 </div>
-		<div class="color xB2"> #B2 </div>
-		<div class="color xB3"> #B3 </div>
-		<div class="color xB4"> #B4 </div>
-		<div class="color xB5"> #B5 </div>
-		<div class="color xB6"> #B6 </div>
-		<div class="color xB7"> #B7 </div>
-		<div class="color xB8"> #B8 </div>
-		<div class="color xB9"> #B9 </div>
-		<div class="color xBA"> #BA </div>
-		<div class="color xBB"> #BB </div>
-		<div class="color xBC"> #BC </div>
-		<div class="color xBD"> #BD </div>
-		<div class="color xBE"> #BE </div>
-		<div class="color xBF"> #BF </div>
-		<div class="color xC0"> #C0 </div>
-		<div class="color xC1"> #C1 </div>
-		<div class="color xC2"> #C2 </div>
-		<div class="color xC3"> #C3 </div>
-		<div class="color xC4"> #C4 </div>
-		<div class="color xC5"> #C5 </div>
-		<div class="color xC6"> #C6 </div>
-		<div class="color xC7"> #C7 </div>
-		<div class="color xC8"> #C8 </div>
-		<div class="color xC9"> #C9 </div>
-		<div class="color xCA"> #CA </div>
-		<div class="color xCB"> #CB </div>
-		<div class="color xCC"> #CC </div>
-		<div class="color xCD"> #CD </div>
-		<div class="color xCE"> #CE </div>
-		<div class="color xCF"> #CF </div>
-		<div class="color xD0"> #D0 </div>
-		<div class="color xD1"> #D1 </div>
-		<div class="color xD2"> #D2 </div>
-		<div class="color xD3"> #D3 </div>
-		<div class="color xD4"> #D4 </div>
-		<div class="color xD5"> #D5 </div>
-		<div class="color xD6"> #D6 </div>
-		<div class="color xD7"> #D7 </div>
-		<div class="color xD8"> #D8 </div>
-		<div class="color xD9"> #D9 </div>
-		<div class="color xDA"> #DA </div>
-		<div class="color xDB"> #DB </div>
-		<div class="color xDC"> #DC </div>
-		<div class="color xDD"> #DD </div>
-		<div class="color xDE"> #DE </div>
-		<div class="color xDF"> #DF </div>
-		<div class="color xE0"> #E0 </div>
-		<div class="color xE1"> #E1 </div>
-		<div class="color xE2"> #E2 </div>
-		<div class="color xE3"> #E3 </div>
-		<div class="color xE4"> #E4 </div>
-		<div class="color xE5"> #E5 </div>
-		<div class="color xE6"> #E6 </div>
-		<div class="color xE7"> #E7 </div>
-		<div class="color xE8"> #E8 </div>
-		<div class="color xE9"> #E9 </div>
-		<div class="color xEA"> #EA </div>
-		<div class="color xEB"> #EB </div>
-		<div class="color xEC"> #EC </div>
-		<div class="color xED"> #ED </div>
-		<div class="color xEE"> #EE </div>
-		<div class="color xEF"> #EF </div>
-		<div class="color xF0"> #F0 </div>
-		<div class="color xF1"> #F1 </div>
-		<div class="color xF2"> #F2 </div>
-		<div class="color xF3"> #F3 </div>
-		<div class="color xF4"> #F4 </div>
-		<div class="color xF5"> #F5 </div>
-		<div class="color xF6"> #F6 </div>
-		<div class="color xF7"> #F7 </div>
-		<div class="color xF8"> #F8 </div>
-		<div class="color xF9"> #F9 </div>
-		<div class="color xFA"> #FA </div>
-		<div class="color xFB"> #FB </div>
-		<div class="color xFC"> #FC </div>
-		<div class="color xFD"> #FD </div>
-		<div class="color xFE"> #FE </div>
-		<div class="color xFF"> #FF </div>
+		<div class="color x_00" id="chosen"> #0 </div>
+		<div class="color x_01"> #1 </div>
+		<div class="color x_02"> #2 </div>
+		<div class="color x_03"> #3 </div>
+		<div class="color x_04"> #4 </div>
+		<div class="color x_05"> #5 </div>
+		<div class="color x_06"> #6 </div>
+		<div class="color x_07"> #7 </div>
+		<div class="color x_08"> #8 </div>
+		<div class="color x_09"> #9 </div>
+		<div class="color x_0A"> #A </div>
+		<div class="color x_0B"> #B </div>
+		<div class="color x_0C"> #C </div>
+		<div class="color x_0D"> #D </div>
+		<div class="color x_0E"> #E </div>
+		<div class="color x_0F"> #F </div>
+		<div class="color x_10"> #10 </div>
+		<div class="color x_11"> #11 </div>
+		<div class="color x_12"> #12 </div>
+		<div class="color x_13"> #13 </div>
+		<div class="color x_14"> #14 </div>
+		<div class="color x_15"> #15 </div>
+		<div class="color x_16"> #16 </div>
+		<div class="color x_17"> #17 </div>
+		<div class="color x_18"> #18 </div>
+		<div class="color x_19"> #19 </div>
+		<div class="color x_1A"> #1A </div>
+		<div class="color x_1B"> #1B </div>
+		<div class="color x_1C"> #1C </div>
+		<div class="color x_1D"> #1D </div>
+		<div class="color x_1E"> #1E </div>
+		<div class="color x_1F"> #1F </div>
+		<div class="color x_20"> #20 </div>
+		<div class="color x_21"> #21 </div>
+		<div class="color x_22"> #22 </div>
+		<div class="color x_23"> #23 </div>
+		<div class="color x_24"> #24 </div>
+		<div class="color x_25"> #25 </div>
+		<div class="color x_26"> #26 </div>
+		<div class="color x_27"> #27 </div>
+		<div class="color x_28"> #28 </div>
+		<div class="color x_29"> #29 </div>
+		<div class="color x_2A"> #2A </div>
+		<div class="color x_2B"> #2B </div>
+		<div class="color x_2C"> #2C </div>
+		<div class="color x_2D"> #2D </div>
+		<div class="color x_2E"> #2E </div>
+		<div class="color x_2F"> #2F </div>
+		<div class="color x_30"> #30 </div>
+		<div class="color x_31"> #31 </div>
+		<div class="color x_32"> #32 </div>
+		<div class="color x_33"> #33 </div>
+		<div class="color x_34"> #34 </div>
+		<div class="color x_35"> #35 </div>
+		<div class="color x_36"> #36 </div>
+		<div class="color x_37"> #37 </div>
+		<div class="color x_38"> #38 </div>
+		<div class="color x_39"> #39 </div>
+		<div class="color x_3A"> #3A </div>
+		<div class="color x_3B"> #3B </div>
+		<div class="color x_3C"> #3C </div>
+		<div class="color x_3D"> #3D </div>
+		<div class="color x_3E"> #3E </div>
+		<div class="color x_3F"> #3F </div>
+		<div class="color x_40"> #40 </div>
+		<div class="color x_41"> #41 </div>
+		<div class="color x_42"> #42 </div>
+		<div class="color x_43"> #43 </div>
+		<div class="color x_44"> #44 </div>
+		<div class="color x_45"> #45 </div>
+		<div class="color x_46"> #46 </div>
+		<div class="color x_47"> #47 </div>
+		<div class="color x_48"> #48 </div>
+		<div class="color x_49"> #49 </div>
+		<div class="color x_4A"> #4A </div>
+		<div class="color x_4B"> #4B </div>
+		<div class="color x_4C"> #4C </div>
+		<div class="color x_4D"> #4D </div>
+		<div class="color x_4E"> #4E </div>
+		<div class="color x_4F"> #4F </div>
+		<div class="color x_50"> #50 </div>
+		<div class="color x_51"> #51 </div>
+		<div class="color x_52"> #52 </div>
+		<div class="color x_53"> #53 </div>
+		<div class="color x_54"> #54 </div>
+		<div class="color x_55"> #55 </div>
+		<div class="color x_56"> #56 </div>
+		<div class="color x_57"> #57 </div>
+		<div class="color x_58"> #58 </div>
+		<div class="color x_59"> #59 </div>
+		<div class="color x_5A"> #5A </div>
+		<div class="color x_5B"> #5B </div>
+		<div class="color x_5C"> #5C </div>
+		<div class="color x_5D"> #5D </div>
+		<div class="color x_5E"> #5E </div>
+		<div class="color x_5F"> #5F </div>
+		<div class="color x_60"> #60 </div>
+		<div class="color x_61"> #61 </div>
+		<div class="color x_62"> #62 </div>
+		<div class="color x_63"> #63 </div>
+		<div class="color x_64"> #64 </div>
+		<div class="color x_65"> #65 </div>
+		<div class="color x_66"> #66 </div>
+		<div class="color x_67"> #67 </div>
+		<div class="color x_68"> #68 </div>
+		<div class="color x_69"> #69 </div>
+		<div class="color x_6A"> #6A </div>
+		<div class="color x_6B"> #6B </div>
+		<div class="color x_6C"> #6C </div>
+		<div class="color x_6D"> #6D </div>
+		<div class="color x_6E"> #6E </div>
+		<div class="color x_6F"> #6F </div>
+		<div class="color x_70"> #70 </div>
+		<div class="color x_71"> #71 </div>
+		<div class="color x_72"> #72 </div>
+		<div class="color x_73"> #73 </div>
+		<div class="color x_74"> #74 </div>
+		<div class="color x_75"> #75 </div>
+		<div class="color x_76"> #76 </div>
+		<div class="color x_77"> #77 </div>
+		<div class="color x_78"> #78 </div>
+		<div class="color x_79"> #79 </div>
+		<div class="color x_7A"> #7A </div>
+		<div class="color x_7B"> #7B </div>
+		<div class="color x_7C"> #7C </div>
+		<div class="color x_7D"> #7D </div>
+		<div class="color x_7E"> #7E </div>
+		<div class="color x_7F"> #7F </div>
+		<div class="color x_80"> #80 </div>
+		<div class="color x_81"> #81 </div>
+		<div class="color x_82"> #82 </div>
+		<div class="color x_83"> #83 </div>
+		<div class="color x_84"> #84 </div>
+		<div class="color x_85"> #85 </div>
+		<div class="color x_86"> #86 </div>
+		<div class="color x_87"> #87 </div>
+		<div class="color x_88"> #88 </div>
+		<div class="color x_89"> #89 </div>
+		<div class="color x_8A"> #8A </div>
+		<div class="color x_8B"> #8B </div>
+		<div class="color x_8C"> #8C </div>
+		<div class="color x_8D"> #8D </div>
+		<div class="color x_8E"> #8E </div>
+		<div class="color x_8F"> #8F </div>
+		<div class="color x_90"> #90 </div>
+		<div class="color x_91"> #91 </div>
+		<div class="color x_92"> #92 </div>
+		<div class="color x_93"> #93 </div>
+		<div class="color x_94"> #94 </div>
+		<div class="color x_95"> #95 </div>
+		<div class="color x_96"> #96 </div>
+		<div class="color x_97"> #97 </div>
+		<div class="color x_98"> #98 </div>
+		<div class="color x_99"> #99 </div>
+		<div class="color x_9A"> #9A </div>
+		<div class="color x_9B"> #9B </div>
+		<div class="color x_9C"> #9C </div>
+		<div class="color x_9D"> #9D </div>
+		<div class="color x_9E"> #9E </div>
+		<div class="color x_9F"> #9F </div>
+		<div class="color x_A0"> #A0 </div>
+		<div class="color x_A1"> #A1 </div>
+		<div class="color x_A2"> #A2 </div>
+		<div class="color x_A3"> #A3 </div>
+		<div class="color x_A4"> #A4 </div>
+		<div class="color x_A5"> #A5 </div>
+		<div class="color x_A6"> #A6 </div>
+		<div class="color x_A7"> #A7 </div>
+		<div class="color x_A8"> #A8 </div>
+		<div class="color x_A9"> #A9 </div>
+		<div class="color x_AA"> #AA </div>
+		<div class="color x_AB"> #AB </div>
+		<div class="color x_AC"> #AC </div>
+		<div class="color x_AD"> #AD </div>
+		<div class="color x_AE"> #AE </div>
+		<div class="color x_AF"> #AF </div>
+		<div class="color x_B0"> #B0 </div>
+		<div class="color x_B1"> #B1 </div>
+		<div class="color x_B2"> #B2 </div>
+		<div class="color x_B3"> #B3 </div>
+		<div class="color x_B4"> #B4 </div>
+		<div class="color x_B5"> #B5 </div>
+		<div class="color x_B6"> #B6 </div>
+		<div class="color x_B7"> #B7 </div>
+		<div class="color x_B8"> #B8 </div>
+		<div class="color x_B9"> #B9 </div>
+		<div class="color x_BA"> #BA </div>
+		<div class="color x_BB"> #BB </div>
+		<div class="color x_BC"> #BC </div>
+		<div class="color x_BD"> #BD </div>
+		<div class="color x_BE"> #BE </div>
+		<div class="color x_BF"> #BF </div>
+		<div class="color x_C0"> #C0 </div>
+		<div class="color x_C1"> #C1 </div>
+		<div class="color x_C2"> #C2 </div>
+		<div class="color x_C3"> #C3 </div>
+		<div class="color x_C4"> #C4 </div>
+		<div class="color x_C5"> #C5 </div>
+		<div class="color x_C6"> #C6 </div>
+		<div class="color x_C7"> #C7 </div>
+		<div class="color x_C8"> #C8 </div>
+		<div class="color x_C9"> #C9 </div>
+		<div class="color x_CA"> #CA </div>
+		<div class="color x_CB"> #CB </div>
+		<div class="color x_CC"> #CC </div>
+		<div class="color x_CD"> #CD </div>
+		<div class="color x_CE"> #CE </div>
+		<div class="color x_CF"> #CF </div>
+		<div class="color x_D0"> #D0 </div>
+		<div class="color x_D1"> #D1 </div>
+		<div class="color x_D2"> #D2 </div>
+		<div class="color x_D3"> #D3 </div>
+		<div class="color x_D4"> #D4 </div>
+		<div class="color x_D5"> #D5 </div>
+		<div class="color x_D6"> #D6 </div>
+		<div class="color x_D7"> #D7 </div>
+		<div class="color x_D8"> #D8 </div>
+		<div class="color x_D9"> #D9 </div>
+		<div class="color x_DA"> #DA </div>
+		<div class="color x_DB"> #DB </div>
+		<div class="color x_DC"> #DC </div>
+		<div class="color x_DD"> #DD </div>
+		<div class="color x_DE"> #DE </div>
+		<div class="color x_DF"> #DF </div>
+		<div class="color x_E0"> #E0 </div>
+		<div class="color x_E1"> #E1 </div>
+		<div class="color x_E2"> #E2 </div>
+		<div class="color x_E3"> #E3 </div>
+		<div class="color x_E4"> #E4 </div>
+		<div class="color x_E5"> #E5 </div>
+		<div class="color x_E6"> #E6 </div>
+		<div class="color x_E7"> #E7 </div>
+		<div class="color x_E8"> #E8 </div>
+		<div class="color x_E9"> #E9 </div>
+		<div class="color x_EA"> #EA </div>
+		<div class="color x_EB"> #EB </div>
+		<div class="color x_EC"> #EC </div>
+		<div class="color x_ED"> #ED </div>
+		<div class="color x_EE"> #EE </div>
+		<div class="color x_EF"> #EF </div>
+		<div class="color x_F0"> #F0 </div>
+		<div class="color x_F1"> #F1 </div>
+		<div class="color x_F2"> #F2 </div>
+		<div class="color x_F3"> #F3 </div>
+		<div class="color x_F4"> #F4 </div>
+		<div class="color x_F5"> #F5 </div>
+		<div class="color x_F6"> #F6 </div>
+		<div class="color x_F7"> #F7 </div>
+		<div class="color x_F8"> #F8 </div>
+		<div class="color x_F9"> #F9 </div>
+		<div class="color x_FA"> #FA </div>
+		<div class="color x_FB"> #FB </div>
+		<div class="color x_FC"> #FC </div>
+		<div class="color x_FD"> #FD </div>
+		<div class="color x_FE"> #FE </div>
+		<div class="color x_FF"> #FF </div>
 	</div>
 
 	<form class="form-inline justify-content-center">
@@ -638,44 +663,27 @@
 			<input type="text" class="form-control" id="inputRows" placeholder="Rows">
 		</div>
 		<span> x </span>
+
 		<div class="form-group">
 			<label class="sr-only" for="inputCols">Number of columns</label>
 			<input type="text" class="form-control" id="inputCols" placeholder="Columns">
 		</div>
+
+		<br/>
+		<div class="form-group">
+			<label class="sr-only" for="pre-delimiter">Preceding delimiter</label>
+			<input type="text" class="form-control" id="pre-delimiter" placeholder="Preceding">
+		</div>
+		<div class="form-group">
+			<label class="sr-only" for="sub-delimiter">Subsequent delimiter</label>
+			<input type="text" class="form-control" id="sub-delimiter" placeholder="Subsequent">
+		</div>
+
 		<button class="btn btn-primary" id="createCanvas" onclick="generateDivs(this)">Create canvas</button>
 	</form>
 	<div class="box" id="canvas">
-
-		<div class="cell xFF" id="d1">
-			1
-		</div>
-		<div class="cell xFF" id="d2">
-			2
-		</div>
-		<div class="cell xFF" id="d3">
-			3
-		</div>
-		<div class="cell xFF" id="d4">
-			4
-		</div>
-		<div class="cell xFF" id="d5">
-			5
-		</div>
-		<div class="cell xFF" id="d6">
-			6
-		</div>
-		<div class="cell xFF" id="d7">
-			7
-		</div>
-		<div class="cell xFF" id="d8">
-			8
-		</div>
-
-
+		<!-- Generated divs goes here! -->
 	</div>
-	<br/>
-	<label class="sr-only" for="delimiter">Delimiter</label>
-	<input type="text" class="form-control" id="delimiter" placeholder="Delimiter">
 	<br />
 	<button class="btn btn-primary" id="giveCode" onclick="setCode(this)">Gif me le code</button>
 	<br />

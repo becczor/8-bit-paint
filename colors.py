@@ -61,7 +61,7 @@ def colorGenerator():
         #print("R: ", r, red)
         #print("G: ", g, green)
         #print("B: ", b, blue)
-        print('.x' + index + ' { background-color: #' + red + green + blue + '}')
+        print('.x_' + index + ' { background-color: #' + red + green + blue + '}')
         colors.append( [i, index, '#' + red + green + blue] )
 
         if b == 255:
@@ -87,8 +87,8 @@ def colorGenerator():
 def divGenerator():
     # Add zeros manually to 0-F. And the last element!
     for i in range(0, 255):
-        print("<div class=\"color x" + str(dec2Hex(i)) + "\"> #" + str(dec2Hex(i)) + " </div>" )
+        print("<div class=\"color x_" + str(dec2Hex(i)) + "\"> #" + str(dec2Hex(i)) + " </div>" )
 
 
-#colorGenerator()
-divGenerator()
+colorGenerator()
+#divGenerator()
