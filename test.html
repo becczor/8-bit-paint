@@ -317,7 +317,10 @@
 			    });
 
 				// Update color class in div that should be filled
-			    $( ".cell" ).click(function( event ) {
+			//  $(staticAncestors).on(eventName, dynamicChild, function() {});
+				$("#canvas").on("click", ".cell", function() {
+					alert("Hello");
+			    //$( ".cell" ).click(function( event ) {
 			    	colorClass = $(this).attr("class").split(" ").pop();
 			    	chosenClass = $("#chosen").attr("class").split(" ").pop();
 			    	$(this).removeClass(colorClass).addClass(chosenClass);
@@ -357,7 +360,7 @@
 				var htmlString = "";
 				for (i = 0; i < rows; i++) {
 					for (j = 0; j < cols; j++) {
-						htmlString += "<div class=\"cell xFF\" id=\"d" + i + j + "\">" + i*cols+j + "</div>";
+						htmlString += "<div class=\"cell xFF\" id=\"d" + i + j + "\">" + i + j + "</div>";
 					}
 				}
 				console.log(htmlString);
