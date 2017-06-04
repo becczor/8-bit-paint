@@ -4,5 +4,6 @@ A web application for generating code for 8-bit images. Users are able to chose 
 ## Todo:
 * Beautify generated code
 * Paste in code for generating an image to continue drawing
+* Create undo options
 * Minimize empty areas in Bootstrap theme
 * Add the painting functionality to theme

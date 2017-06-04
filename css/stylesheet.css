@@ -1,0 +1,19 @@
+#canvasForm {
+  margin-top: 30px;  
+}
+
+#canvasButton {
+	margin: 0px 10px;
+}
+
+.smallInput {
+	margin: 0px 10px;
+	width: 142px!important;
+}
+
+h3 {
+	font-size: 1.3em;
+}
+
+section.default {
+  background: white; }
