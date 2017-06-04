@@ -19,7 +19,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- Custom styles for this template -->
-    <link href="css/freelancer.min.css" rel="stylesheet">
+    <link href="css/freelancer.css" rel="stylesheet">
     <link href="css/stylesheet.css" rel="stylesheet">
 
     <!-- Temporary navbar container fix -->
@@ -62,22 +62,21 @@
     <!-- Header -->
     <header class="masthead">
         <div class="container">
-            <img class="img-fluid" src="img/blunicorn.png" alt="">
+            <!--<img class="img-fluid" src="img/blunicorn.png" alt=""> -->
             <div class="intro-text">
                 <span class="name">8 bit paint</span>
                 <span class="skills">Create 8 bit color images, and generate code</span>
-                <hr class="star-light">
-                <form class="form-inline justify-content-center">
+                <!--<hr class="star-light">-->
+                <form class="form-inline justify-content-center" id="canvasForm">
 					<div class="form-group">
 						<label class="sr-only" for="inputRows">Number of rows</label>
-						<input type="text" class="form-control" id="inputRows" placeholder="Rows">
+						<input type="text" class="form-control smallInput" id="inputRows" placeholder="Rows">
 					</div>
-					<span class="skills"> x </span>
 					<div class="form-group">
 						<label class="sr-only" for="inputCols">Number of columns</label>
-						<input type="text" class="form-control" id="inputCols" placeholder="Columns">
+						<input type="text" class="form-control smallInput" id="inputCols" placeholder="Columns">
 					</div>
-					<button type="submit" class="btn btn-primary" id="createCanvas" onclick="genDivs(6)">Create canvas</button>
+					<button class="btn btn-primary" id="canvasButton" onclick="genDivs(6)" href="#portfolio">Create canvas</button>
 				</form>
 
             </div>
@@ -85,7 +84,7 @@
     </header>
 
     <!-- Portfolio Grid Section -->
-    <section id="portfolio">
+    <section class="default" id="portfolio">
         <div class="container">
             <h2 class="text-center">Paint</h2>
             <!--<hr class="star-primary">-->
@@ -101,7 +100,7 @@
     <section class="success" id="about">
         <div class="container">
             <h2 class="text-center">Code</h2>
-            <hr class="star-light">
+            <!--<hr class="star-light">-->
         </div>
     </section>
 
@@ -163,14 +162,13 @@
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <script src="js/paint.js"></script>
-
     <!-- Contact Form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/contact_me.js"></script>
 
     <!-- Custom scripts for this template -->
     <script src="js/freelancer.min.js"></script>
+    <script src="js/paint.js"></script>
 
 </body>
 
