@@ -54,6 +54,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#about">Code</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#realabout">About</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -84,11 +87,11 @@
     </header>
 
     <!-- Portfolio Grid Section -->
-    <section class="default" id="portfolio">
+    <section class="success" id="portfolio">
         <div class="container">
             <h2 class="text-center">Paint</h2>
             <!--<hr class="star-primary">-->
-            <a class="nav-link text-center nav-item active" target="_blank" href="https://becczor.github.io/8-bit-paint/test.html">Test if out!</a>
+            <a class="nav-link text-center nav-item" target="_blank" href="https://becczor.github.io/8-bit-paint/test.html">Test it out!</a>
 
         </div>
         <div>
@@ -97,10 +100,34 @@
     </section>
 
     <!-- About Section -->
-    <section class="success" id="about">
+    <section class="default" id="about">
         <div class="container">
-            <h2 class="text-center">Code</h2>
+            <h2 class="text-center default">Code</h2>
             <!--<hr class="star-light">-->
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="success" id="realabout">
+        <div class="container">
+            <h2 class="text-center">About</h2>
+            <!--<hr class="star-light">-->
+            <h3>8 bit colors</h3>
+            <p>
+                8 bit colors give us the opportunity to use 256 different colors. In this appliction, R get three bits, G, get three bit, and B get two bits. This means that for each step that is taken in the 8-bit color space, the B value in RGB is increased with 85. This happens since the two bits in B give us four possible states for the blue value. When B is equal to 255, G will increase by 36. This happens since the three bits i G give us eight possible states for the green value. But 36 doesn't sum up to exactly 255 when multiplied, so when G is equal to 252, R will increase by 36, using the same concept as for the G value. When reaching the last color, FF, both R and G will be assigned the value 255 instead of 252. Due to this we can use the color white.  
+            </p>
+            <h3>This application</h3>
+            <p>
+                When taking the course TSEA83 Computer Design at Linköping University spring 2017, me and my group had a real struggle to understand the 8 bit color system. And when understanding it, we still had issues with how to create our graphics in a smooth way. We wanted to see how the image turned out before we converted it to code to add to our VHDL project. We tried to add rules with colors in Excel, but this became overwhelming because of:
+            </p>
+            <ol>
+                <li>We created many images.</li>
+                <li>We used many colors.</li>
+                <li>Excel sucks.</li>
+            </ol>
+            <p>
+                We managed to get through the project without any of us throwing the computer out of the non-exsisting windows in the computer lab Muxen, but afterwards the idea of creating an application to make it easier for the students to create images and convert it to code. 
+            </p>
         </div>
     </section>
 

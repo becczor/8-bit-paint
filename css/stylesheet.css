@@ -11,6 +11,10 @@
 	width: 142px!important;
 }
 
+h2.default {
+	color: #2C3E50;
+}
+
 h3 {
 	font-size: 1.3em;
 }

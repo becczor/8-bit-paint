@@ -8,7 +8,8 @@ body {
   overflow-x: hidden; 
   background-color: #2C3E50}
 
-p {
+p,
+ol {
   font-size: 20px; }
 
 p.small {
@@ -159,7 +160,8 @@ section.success {
 header.masthead {
   text-align: center;
   color: white;
-  background: #18BC9C; }
+  /*background: #18BC9C; */
+  background-image: url("../img/background.png"); }
   header.masthead .container {
     padding-top: 100px;
     padding-bottom: 50px; }
@@ -175,6 +177,11 @@ header.masthead {
   header.masthead .intro-text .skills {
     font-size: 1.25em;
     font-weight: 300; }
+
+  .intro-text {
+    background-color: rgba(24, 188, 156, 0.82); /* #18BC9C with transparency*/
+    padding-bottom: 20px;
+  }
 
 @media (min-width: 768px) {
   header.masthead .container {
