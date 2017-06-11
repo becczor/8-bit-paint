@@ -7,8 +7,9 @@ A web application for generating code for 8-bit images. Users are able to chose 
 * Create undo options
 * Chose hex or binary
 * Chose transparent color
-* Add favicon
-* Add background image to start
+* ~~Add favicon~~
+* ~~Add background image to start~~
 * Change delimiter after starting to paint
+* Change size of canvas after starting to paint
 * ~~Minimize empty areas in Bootstrap theme~~
 * Add the painting functionality to theme
