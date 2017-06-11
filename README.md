@@ -5,5 +5,10 @@ A web application for generating code for 8-bit images. Users are able to chose 
 * Beautify generated code
 * Paste in code for generating an image to continue drawing
 * Create undo options
-* Minimize empty areas in Bootstrap theme
+* Chose hex or binary
+* Chose transparent color
+* Add favicon
+* Add background image to start
+* Change delimiter after starting to paint
+* ~~Minimize empty areas in Bootstrap theme~~
 * Add the painting functionality to theme
