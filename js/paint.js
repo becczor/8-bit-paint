@@ -60,7 +60,7 @@ var generateDivs = function(html) {
 
     var htmlString = "";
     for (i = 0; i < rows; i++) {
-        htmlString += "<div class=\"row\">";
+        htmlString += "<div class=\"canvasRow\">";
         for (j = 0; j < cols; j++) {
             htmlString += "<div class=\"cell x_FF\" id=\"d" + i + j + "\">" + preDelimiter + "FF" + subDelimiter + "</div>";
         }
