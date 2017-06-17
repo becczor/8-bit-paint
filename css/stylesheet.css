@@ -17,6 +17,8 @@ h2.default {
 
 h3 {
 	font-size: 1.3em;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 section.default {
@@ -81,6 +83,7 @@ section.default {
 	font-size: 12px;
 }
 
+/* https://stackoverflow.com/questions/35969656/how-can-i-generate-the-opposite-color-according-to-current-color */
 .x_00 { background-color: #000000;
 	color: #FFFFFF; }
 .x_01 { background-color: #000055;
